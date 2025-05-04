@@ -1,0 +1,46 @@
+w=input("    what is your name please! ")
+print("Welcome,",w, ",to my new, simple calculator app")
+
+
+
+
+def  add(x,y):
+    return x+y
+    
+def sub(x,y):
+    return x-y
+    
+def mult(x,y):
+    return x*y
+    
+def div(x,y):
+    if y=="0":
+        print("  input invalid: ")
+    else:
+        
+       return x/y
+    
+def expo(x,y):   
+    return x**y
+    
+a=float(input("  Enter first number:  "))
+b=float(input("  Enter your second number:  "))
+op=input("   Choose an operation: + ,- ,* ,/ ,** ")
+
+   
+if op=="+":
+        print("  result is: ", add(a,b))
+elif op=="-":
+        print("  result is: ", sub(a,b))
+elif op=="*":
+        print("  result is: ", mult(a,b))
+elif op=="/":
+        print("  result is: ", div(a,b))
+elif op=="**":
+    print("   result is:  ", expo(a,b))
+else:
+    print("""  Opreration not found! , please tey again. """)
+print("Thanks for your cooperation!",w)
+
+
+
